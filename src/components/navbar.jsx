@@ -16,13 +16,13 @@ const socials = [
   {
     id: 1,
     title: "LinkeDin",
-    img: "/linkedin.png",
+    img: "./linkedin.png",
     link: "https://www.linkedin.com/in/mayuresh-dhamankar-777417179/",
   },
   {
     id: 2,
     title: "Github",
-    img: "/github.png",
+    img: "./github.png",
     link: "https://github.com/mayureshdh/",
   },
   // {
@@ -99,7 +99,7 @@ const Navbar = () => {
       {/* LOGO */}
       <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
         <Link href="/" className="flex items-center justify-center">
-          <Image src="/logo-1.png" alt="" width={200} height={200}></Image>
+          <Image src="./logo-1.png" alt="" width={200} height={200}></Image>
         </Link>
       </div>
       {/* SOCIAL */}
@@ -109,15 +109,6 @@ const Navbar = () => {
             <Image src={social.img} alt="" width={24} height={24} />
           </Link>
         ))}
-        {/* <Link href="/">
-          <Image src="/github.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="/">
-          <Image src="/instagram.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href={"www.linkedin.com/in/mayuresh-dhamankar-777417179"}>
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
-        </Link> */}
       </div>
       {/* RESPONSIVE MENU */}
       <div className="md:hidden">
